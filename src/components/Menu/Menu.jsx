@@ -1,0 +1,49 @@
+import React from 'react';
+import './Menu.css';
+import { Navbar, Container, Nav, NavDropdown, Button, FormControl, Form, InputGroup } from 'react-bootstrap';
+import { BiSearchAlt } from 'react-icons/bi';
+
+function Menu(props) {
+    return (
+        <Navbar bg="light" expand="lg">
+            <Container fluid>
+                <Navbar.Brand href="#home">
+                    <img
+                        src="/logo192.png"
+                        alt="logo"
+                        width={30}
+                        height={30}
+                        className="d-inline-block align-top"
+                    />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="flex-grow-1 justify-content-center">                        
+                        <Nav.Link href="#home">Inicio</Nav.Link>
+                        <Nav.Link href="#aboutus">Acerca de Nosotros</Nav.Link>
+                        <NavDropdown title="Productos" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#producto/ropa">Ropa</NavDropdown.Item>
+                            <NavDropdown.Item href="#producto/electro">Electrodomésticos</NavDropdown.Item>
+                            <NavDropdown.Item href="#producto/deco">Decoración</NavDropdown.Item>                            
+                            <NavDropdown.Item href="#producto/muebles">Muebles</NavDropdown.Item>
+                        </NavDropdown>
+                        <Form className="d-flex ms-5 mb-2">
+                            <InputGroup>
+                                <FormControl
+                                    placeholder="Buscar Producto"
+                                    aria-label="Buscar Producto"
+                                />
+                                <Button variant="outline-secondary" id="button-addon2">
+                                    <BiSearchAlt />
+                                </Button>
+                            </InputGroup>
+                        </Form>
+                    </Nav>                    
+                    <Button variant="outline-primary">Login</Button>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+}
+
+export default Menu;
