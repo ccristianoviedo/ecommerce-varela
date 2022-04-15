@@ -2,6 +2,8 @@ import React from 'react';
 import './Menu.css';
 import { Navbar, Container, Nav, NavDropdown, Button, FormControl, Form, InputGroup } from 'react-bootstrap';
 import { BiSearchAlt } from 'react-icons/bi';
+import Cartwidget from '../Cartwidget/Cartwidget';
+import Logincontrol from '../Logincontrol/Logincontrol';
 
 function Menu(props) {
     return (
@@ -32,14 +34,14 @@ function Menu(props) {
                                 <FormControl
                                     placeholder="Buscar Producto"
                                     aria-label="Buscar Producto"
-                                />
+                                />                                
                                 <Button variant="outline-secondary" id="button-addon2">
                                     <BiSearchAlt />
                                 </Button>
                             </InputGroup>
                         </Form>
-                    </Nav>                    
-                    <Button variant="outline-primary">Login</Button>
+                    </Nav>           
+                    <Cartwidget />
                 </Navbar.Collapse>
             </Container>
         </Navbar>
