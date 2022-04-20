@@ -5,16 +5,18 @@ import { BiSearchAlt } from 'react-icons/bi';
 import Cartwidget from '../Cartwidget/Cartwidget';
 import Logincontrol from '../Logincontrol/Logincontrol';
 
+
 function Menu(props) {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar style={{backgroundColor: "#F9C22E"}} expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <img
-                        src="/logo192.png"
+                        src="/american.png"
                         alt="logo"
-                        width={30}
-                        height={30}
+                        width={130}
+                        height={130}                          
+                        backgroundColor='transparent'    
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
@@ -40,7 +42,8 @@ function Menu(props) {
                                 </Button>
                             </InputGroup>
                         </Form>
-                    </Nav>           
+                    </Nav>        
+                    <Logincontrol {...props} />   
                     <Cartwidget />
                 </Navbar.Collapse>
             </Container>

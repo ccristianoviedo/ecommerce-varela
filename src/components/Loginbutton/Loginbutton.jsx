@@ -3,7 +3,7 @@ import { Button} from 'react-bootstrap';
 
 const Loginbutton = (props) => {
   return (
-    <Button onClick={props.onClick} variant="outline-success" className="d-flex ms-5 mb-2">Login</Button>
+    <Button onClick={props.onClick} variant="outline-success" style={{width:"80px", textAlign:"center"}}>Login</Button>
   )
 }
 

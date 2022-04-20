@@ -1,39 +1,23 @@
 import Loginbutton from "../Loginbutton/Loginbutton";
 import Logoutbutton from "../Logoutbutton/Logoutbutton";
-import React from "react";
+import React, { useState } from "react";
 import Itemlistcontainer from "../Itemlistcontainer/Itemlistcontainer";
 
-class Logincontrol extends React.Component {
-    constructor(props) {
-      super(props);
-      this.handleLoginClick = this.handleLoginClick.bind(this);
-      this.handleLogoutClick = this.handleLogoutClick.bind(this);
-      this.state = {isLoggedIn: false};
-    }
-    handleLoginClick() {
-      this.setState({isLoggedIn: true});
-    }
-    handleLogoutClick() {
-      this.setState({isLoggedIn: false});
-    }
-    render() {
+function Logincontrol({isLoggedIn, handleLoginClick, handleLogoutClick}) {  
 
-      const isLoggedIn = this.state.isLoggedIn;
-      let button;
+  let button;
 
-      if (isLoggedIn) {
-        button = <Logoutbutton onClick={this.handleLogoutClick} />;
-      } else {
-        button = <Loginbutton onClick={this.handleLoginClick} />;
-      }
-      
-      return (
-        <div>
-          <Itemlistcontainer isLoggedIn={isLoggedIn} />
-          {button}
-        </div>
-      );
-    }
+  if (isLoggedIn) {
+    button = <Logoutbutton onClick={handleLogoutClick} />;
+  } else {
+    button = <Loginbutton onClick={handleLoginClick} />;
   }
 
-  export default Logincontrol
+  return (
+    <div>      
+      {button}
+    </div>
+  );
+}
+
+export default Logincontrol
