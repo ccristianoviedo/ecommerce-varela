@@ -14,8 +14,8 @@ function Menu(props) {
                     <img
                         src="/american.png"
                         alt="logo"
-                        width={130}
-                        height={130}                          
+                        width={100}
+                        height={100}                          
                         backgroundColor='transparent'    
                         className="d-inline-block align-top"
                     />
