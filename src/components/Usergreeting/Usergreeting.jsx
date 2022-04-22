@@ -1,32 +1,53 @@
-import React from 'react'
-import { Col, Row, Card } from 'react-bootstrap'
-import ItemCount from '../ItemCount/ItemCount';
+import React, { useEffect, useState } from 'react'
+import ItemList from '../ItemList/ItemList';
+import { ropa } from '../../ropa';
 
 const Usergreeting = () => {
 
-  function onAdd(cantidad) {
-    console.log(cantidad);
+  const [prendas, setPrendas] = useState([]);
+
+  function traerProductos() {
+    const myPromise = new Promise((resolve, reject) => {
+      const productos = ropa;
+      setTimeout(() => {
+        resolve(productos);
+      }, 2000);
+    });
+    return myPromise;
   }
+
+  // fetch
+  // async function traerProductosConFetch () {
+  //   return fetch ('url')
+  //     .then(res => res.json())
+  // }
+
+  // useEffect(() => {
+  //   traerProductosConFetch()
+  //     .then(prendaArray => setPrendas(prendaArray));
+  // }, [])
+
+
+  // fetch con un timeout
+  // function traerProductos () {
+  //   const myPromise = new Promise((resolve, reject) => {
+  //     setTimeout(() => {
+  //       fetch ('url')
+  //       .then(productos => resolve(productos));
+
+  //     }, 2000);
+  //   });
+  //   return myPromise;
+  // }
+
+  useEffect(() => {
+    traerProductos()
+      .then(prendaArray => setPrendas(prendaArray));
+  }, [])
 
   return (
     <div>Welcome Back !
-      <Row xs={1} md={4} className="g-4">
-        {Array.from({ length: 12 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card>
-              <Card.Img variant="top" src="/american.svg" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit longer.
-                </Card.Text>
-                <ItemCount stock={5} initial={1} onAdd={onAdd} />
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <ItemList ropa={prendas} />
     </div>
   )
 }

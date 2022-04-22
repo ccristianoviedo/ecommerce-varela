@@ -1,0 +1,11 @@
+.btn-rojo {
+    background-color: transparent;
+    color: #A52422;
+    border-color: #A52422
+}
+
+.btn-rojo:hover {
+    color: #fff;
+    border-color: #A52422;
+    background-color: #A52422
+}

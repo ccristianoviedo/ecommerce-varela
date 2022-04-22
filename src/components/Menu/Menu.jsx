@@ -4,6 +4,7 @@ import { Navbar, Container, Nav, NavDropdown, Button, FormControl, Form, InputGr
 import { BiSearchAlt } from 'react-icons/bi';
 import Cartwidget from '../Cartwidget/Cartwidget';
 import Logincontrol from '../Logincontrol/Logincontrol';
+import '../Logoutbutton/Logoutbutton.css';
 
 
 function Menu(props) {
@@ -37,7 +38,7 @@ function Menu(props) {
                                     placeholder="Buscar Producto"
                                     aria-label="Buscar Producto"
                                 />                                
-                                <Button variant="outline-secondary" id="button-addon2">
+                                <Button id="button-addon2" className='btn-rojo'>
                                     <BiSearchAlt />
                                 </Button>
                             </InputGroup>
