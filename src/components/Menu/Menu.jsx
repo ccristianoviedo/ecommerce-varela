@@ -9,7 +9,7 @@ import '../Logoutbutton/Logoutbutton.css';
 
 function Menu(props) {
     return (
-        <Navbar style={{backgroundColor: "#F9C22E"}} expand="lg">
+        <Navbar variant="dark" style={{backgroundColor: "#40434E"}} expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <img
@@ -38,7 +38,7 @@ function Menu(props) {
                                     placeholder="Buscar Producto"
                                     aria-label="Buscar Producto"
                                 />                                
-                                <Button id="button-addon2" className='btn-rojo'>
+                                <Button id="button-addon2" className='btn-white'>
                                     <BiSearchAlt />
                                 </Button>
                             </InputGroup>

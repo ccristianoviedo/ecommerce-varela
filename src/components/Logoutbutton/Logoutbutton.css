@@ -1,11 +1,11 @@
-.btn-rojo {
+.btn-white {
     background-color: transparent;
-    color: #A52422;
-    border-color: #A52422
+    color: #FFFFFA;
+    border-color: #FFFFFA;
 }
 
-.btn-rojo:hover {
-    color: #fff;
-    border-color: #A52422;
-    background-color: #A52422
+.btn-white:hover {
+    color: #080705;
+    border-color: #FFFFFA;
+    background-color: #FFFFFA;
 }

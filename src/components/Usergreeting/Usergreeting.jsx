@@ -6,17 +6,7 @@ const Usergreeting = () => {
 
   const [prendas, setPrendas] = useState([]);
 
-  function traerProductos() {
-    const myPromise = new Promise((resolve, reject) => {
-      const productos = ropa;
-      setTimeout(() => {
-        resolve(productos);
-      }, 2000);
-    });
-    return myPromise;
-  }
-
-  // fetch
+    // fetch
   // async function traerProductosConFetch () {
   //   return fetch ('url')
   //     .then(res => res.json())
@@ -39,6 +29,16 @@ const Usergreeting = () => {
   //   });
   //   return myPromise;
   // }
+
+  function traerProductos() {
+    const myPromise = new Promise((resolve, reject) => {
+      const productos = ropa;
+      setTimeout(() => {
+        resolve(productos);
+      }, 2000);
+    });
+    return myPromise;
+  }  
 
   useEffect(() => {
     traerProductos()

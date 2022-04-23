@@ -14,12 +14,12 @@ const Item = ({item}) => {
                 <Card>
                     <Card.Img variant="top" src={item.imagen} height={350} style={{objectFit:"contain"}} />                    
                     <Card.Body>
-                        <Card.Title>{item.cartTexto}</Card.Title>
+                        <Card.Title>{item.titulo}</Card.Title>
                         <Card.Text>
                             This is a longer card with supporting text below as a natural
                             lead-in to additional content. This content is a little bit longer.
                         </Card.Text>
-                        <ItemCount stock={item} initial={1} onAdd={onAdd} />
+                        <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                     </Card.Body>
                 </Card>
             </Col>

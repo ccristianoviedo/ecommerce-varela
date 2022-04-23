@@ -8,7 +8,7 @@ import './Cartwidget.css';
 
 const Cartwidget = () => {
     return (
-        <Button className='ms-5 btn-rojo'>
+        <Button className='ms-5 btn-white'>
             <div className="cart-widget">
                 <FontAwesomeIcon icon={faCartShopping} size="2x"/>                           
             </div>

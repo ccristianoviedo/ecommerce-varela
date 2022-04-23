@@ -4,7 +4,7 @@
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    background-color: #F5B700;
+    background-color: #40434E;
     color: brown;
 }
 
@@ -15,4 +15,8 @@
 
 .nav a:hover{
     color: blue;
+}
+
+.texto{
+    color: #FFFFFA !important;
 }
