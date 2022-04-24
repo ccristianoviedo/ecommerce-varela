@@ -9,7 +9,7 @@ import '../Logoutbutton/Logoutbutton.css';
 
 function Menu(props) {
     return (
-        <Navbar variant="dark" style={{backgroundColor: "#40434E"}} expand="lg">
+        <Navbar fixed={'top'} className={'position-sticky ps-0'} variant="dark" style={{backgroundColor: "#40434E"}} expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <img
@@ -34,11 +34,12 @@ function Menu(props) {
                         </NavDropdown>
                         <Form className="d-flex ms-5 mb-2">
                             <InputGroup>
-                                <FormControl
+                                <FormControl 
+                                    className="btn-search"
                                     placeholder="Buscar Producto"
                                     aria-label="Buscar Producto"
                                 />                                
-                                <Button id="button-addon2" className='btn-white'>
+                                <Button id="button-addon2" className='btn-white-gray'>
                                     <BiSearchAlt />
                                 </Button>
                             </InputGroup>
