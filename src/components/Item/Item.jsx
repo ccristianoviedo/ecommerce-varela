@@ -10,23 +10,21 @@ const Item = ({ item }) => {
     }
 
     return (
-        <div>
-            <Col>
-                <Card>
-                    <Link to={`/item/${item.id}`} style={{ textDecoration: 'none' }}>
-                        <Card.Img variant="top" src={item.imagen} height={350} style={{ objectFit: "contain" }} />
-                    </Link>
-                    <Card.Body>
-                        <Card.Title>{item.titulo}</Card.Title>
-                        <Card.Text>
-                            This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.
-                        </Card.Text>
-                        <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
-                    </Card.Body>
-                </Card>
-            </Col>
-        </div>
+        <Col>
+            <Card border="dark">
+                <Link to={`/item/${item.id}`} style={{ textDecoration: 'none' }}>
+                    <Card.Img variant="top" src={item.imagen} height={350} style={{ objectFit: "contain" }} />
+                </Link>
+                <Card.Body>
+                    <Card.Title>{item.titulo}</Card.Title>
+                    <Card.Text>
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit longer.
+                    </Card.Text>
+                    <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                </Card.Body>
+            </Card>
+        </Col>
     )
 }
 

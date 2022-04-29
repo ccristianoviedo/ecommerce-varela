@@ -19,6 +19,7 @@ function ItemCount({ stock, initial, onAdd }) {
                             actualizarContador(contadorValue - 1);
                     }}>-</button>
             </div>
+            <br></br>
             <button className="btn btn-gray" style={{ marginTop: "5px" }} onClick={() => { onAdd(contadorValue);}}>Agregar al carrito</button>
         </div>
     );

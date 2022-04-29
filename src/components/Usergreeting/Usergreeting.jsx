@@ -3,6 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import { ropa } from '../../ropa';
 import { Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
+import Spinner from 'react-bootstrap/Spinner'
 
 const Usergreeting = () => {
 
@@ -48,7 +49,10 @@ const Usergreeting = () => {
   }, [])
 
   return (
-    <div>Welcome Back !
+    <div>
+      {/* <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner> */}
       <Routes>
         <Route path='/' element={<ItemList ropa={prendas} />} />
         <Route path='item/:id' element={<ItemDetailContainer ropa={prendas} />} />
