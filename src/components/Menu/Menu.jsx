@@ -4,6 +4,7 @@ import { Navbar, Container, Nav, NavDropdown, Button, FormControl, Form, InputGr
 import { BiSearchAlt } from 'react-icons/bi';
 import Cartwidget from '../Cartwidget/Cartwidget';
 import Logincontrol from '../Logincontrol/Logincontrol';
+import { Link } from 'react-router-dom';
 import '../Logoutbutton/Logoutbutton.css';
 
 
@@ -17,15 +18,16 @@ function Menu(props) {
                         alt="logo"
                         width={100}
                         height={100}                          
-                        backgroundColor='transparent'    
+                        backgroundcolor='transparent'    
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="flex-grow-1 justify-content-center">                        
-                        <Nav.Link href="#home">Inicio</Nav.Link>
-                        <Nav.Link href="#aboutus">Acerca de Nosotros</Nav.Link>
+                        <Nav.Link to="/" as={Link}>Inicio</Nav.Link>
+                        {/* <Link to={'/prueba/:id'}>Prueba</Link> */}
+                        <Nav.Link to='/aboutus' as={Link}>Acerca de Nosotros</Nav.Link>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#producto/ropa">Ropa</NavDropdown.Item>
                             <NavDropdown.Item href="#producto/electro">Electrodomésticos</NavDropdown.Item>

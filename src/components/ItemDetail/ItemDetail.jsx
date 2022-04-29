@@ -3,7 +3,7 @@ import { Col, Card } from 'react-bootstrap';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 
-const Item = ({ item }) => {
+const ItemDetail = ({ item }) => {
 
     function onAdd(cantidad) {
         console.log(cantidad);
@@ -30,4 +30,4 @@ const Item = ({ item }) => {
     )
 }
 
-export default Item
+export default ItemDetail

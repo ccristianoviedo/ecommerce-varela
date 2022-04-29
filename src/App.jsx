@@ -2,6 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Menu from './components/Menu/Menu';
 import Itemlistcontainer from './components/Itemlistcontainer/Itemlistcontainer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 import { useState } from 'react';
 
@@ -18,10 +21,16 @@ function App() {
 
   return (
     <div className="App">
+
       <Menu handleLoginClick={handleLoginClick} handleLogoutClick={handleLogoutClick} isLoggedIn={isLoggedIn} />
-      <header className="App-header">
-        <Itemlistcontainer isLoggedIn={isLoggedIn} />
-      </header>
+      <main className="App-header">
+      <Routes>
+        <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/*' element={<Home isLoggedIn={isLoggedIn}/>} />
+      </Routes>
+        
+      </main>
+      
     </div>
   );
 }

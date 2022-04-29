@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList';
 import { ropa } from '../../ropa';
+import { Routes, Route } from 'react-router-dom';
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 
 const Usergreeting = () => {
 
   const [prendas, setPrendas] = useState([]);
 
-    // fetch
+  // fetch
   // async function traerProductosConFetch () {
   //   return fetch ('url')
   //     .then(res => res.json())
@@ -38,7 +40,7 @@ const Usergreeting = () => {
       }, 2000);
     });
     return myPromise;
-  }  
+  }
 
   useEffect(() => {
     traerProductos()
@@ -47,7 +49,10 @@ const Usergreeting = () => {
 
   return (
     <div>Welcome Back !
-      <ItemList ropa={prendas} />
+      <Routes>
+        <Route path='/' element={<ItemList ropa={prendas} />} />
+        <Route path='item/:id' element={<ItemDetailContainer ropa={prendas} />} />
+      </Routes>
     </div>
   )
 }
