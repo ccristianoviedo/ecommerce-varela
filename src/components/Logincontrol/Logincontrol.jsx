@@ -1,16 +1,15 @@
-import Loginbutton from "../Loginbutton/Loginbutton";
-import Logoutbutton from "../Logoutbutton/Logoutbutton";
-import React, { useState } from "react";
-import Itemlistcontainer from "../Itemlistcontainer/Itemlistcontainer";
+import LoginButton from "../LoginButton/LoginButton";
+import LogoutButton from "../LogoutButton/LogoutButton";
+import React from "react";
 
-function Logincontrol({isLoggedIn, handleLoginClick, handleLogoutClick}) {  
+function LoginControl({isLoggedIn, handleLoginClick, handleLogoutClick}) {  
 
   let button;
 
   if (isLoggedIn) {
-    button = <Logoutbutton onClick={handleLogoutClick} />;
+    button = <LogoutButton onClick={handleLogoutClick} />;
   } else {
-    button = <Loginbutton onClick={handleLoginClick} />;
+    button = <LoginButton onClick={handleLoginClick} />;
   }
 
   return (
@@ -20,4 +19,4 @@ function Logincontrol({isLoggedIn, handleLoginClick, handleLogoutClick}) {
   );
 }
 
-export default Logincontrol
+export default LoginControl

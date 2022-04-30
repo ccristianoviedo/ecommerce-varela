@@ -4,7 +4,6 @@ import Menu from './components/Menu/Menu';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
-
 import { useState } from 'react';
 
 function App() {

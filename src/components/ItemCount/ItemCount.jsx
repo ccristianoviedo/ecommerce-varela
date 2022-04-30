@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import '../Logoutbutton/Logoutbutton.css';
+import '../LogoutButton/LogoutButton.css';
 import './ItemCount.css'
 
 function ItemCount({ stock, initial, onAdd }) {

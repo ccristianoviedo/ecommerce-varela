@@ -1,19 +1,34 @@
-import React from 'react';
-import '../Logoutbutton/Logoutbutton.css';
+import React, { useState } from 'react';
+import '../LogoutButton/LogoutButton.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import { Button } from 'react-bootstrap';
+import { Button, Offcanvas } from 'react-bootstrap';
 
-import './Cartwidget.css';
+import './CartWidget.css';
 
-const Cartwidget = () => {
+const CartWidget = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <Button className='ms-5 btn-white'>
-            <div className="cart-widget">
-                <FontAwesomeIcon icon={faCartShopping} size="2x"/>                           
-            </div>
-        </Button>
+        <>
+            <Button onClick={handleShow} className='ms-5 btn-white'>
+                <div className="cart-widget">
+                    <FontAwesomeIcon icon={faCartShopping} size="2x" />
+                </div>
+            </Button>
+            <Offcanvas show={show} onHide={handleClose} placement={'end'}>
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    Some text as placeholder. In real life you can have the elements you
+                    have chosen. Like, text, images, lists, etc.
+                </Offcanvas.Body>
+            </Offcanvas>
+        </>
     );
 };
 
-export default Cartwidget;
+export default CartWidget;

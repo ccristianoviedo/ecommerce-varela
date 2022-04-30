@@ -1,10 +1,10 @@
 import React from 'react';
-import Itemlistcontainer from '../../components/Itemlistcontainer/Itemlistcontainer';
+import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
 
 const Home = ({isLoggedIn}) => {
   return (
     <div>        
-        <Itemlistcontainer isLoggedIn={isLoggedIn} />
+        <ItemListContainer isLoggedIn={isLoggedIn} />
     </div>
   )
 }

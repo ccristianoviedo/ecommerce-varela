@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button} from 'react-bootstrap';
-import './Logoutbutton.css';
+import './LogoutButton.css';
 
-const Logoutbutton = (props) => {
+const LogoutButton = (props) => {
   return (
     <Button onClick={props.onClick} className="btn-white" style={{width:"80px", textAlign:"center"}}>Logout</Button>
   )
 }
 
-export default Logoutbutton
+export default LogoutButton

@@ -6,10 +6,11 @@ import Rating from '@mui/material/Rating';
 
 const ItemDetail = ({ item }) => {
 
-    const [talle, setTalle] = useState(0);
+    const [talle, setTalle] = useState('m');
 
     function onAdd(cantidad) {
         console.log(cantidad);
+        console.log(talle);
     }
 
     return (
@@ -26,11 +27,11 @@ const ItemDetail = ({ item }) => {
                         <Card.Text className='textoStyle'>{item.cartTexto}</Card.Text>
                         <Card.Text className='textoStyle'>Precio:  <span className='precioStyle'>$ {item.precio}</span></Card.Text>
                         <hr></hr>
-                        <button className="btn btn-talle col-1" onClick={() => setTalle(1)}>XS</button>
-                        <button className="btn btn-talle col-1" onClick={() => setTalle(1)}>S</button>
-                        <button className="btn btn-talle col-1" onClick={() => setTalle(1)}>M</button>
-                        <button className="btn btn-talle col-1" onClick={() => setTalle(1)}>L</button>
-                        <button className="btn btn-talle col-1" onClick={() => setTalle(1)}>XL</button>
+                        <button className="btn btn-talle col-1" onClick={() => setTalle('xs')}>XS</button>
+                        <button className="btn btn-talle col-1" onClick={() => setTalle('s')}>S</button>
+                        <button className="btn btn-talle col-1" onClick={() => setTalle('m')}>M</button>
+                        <button className="btn btn-talle col-1" onClick={() => setTalle('l')}>L</button>
+                        <button className="btn btn-talle col-1" onClick={() => setTalle('xl')}>XL</button>
                         <br></br>
                         <hr></hr>
                         <Row xs={2}>

@@ -1,14 +1,14 @@
 import React from 'react'
-import Usergreeting from '../Usergreeting/Usergreeting';
-import Guestgreeting from '../Guestgreeting/Guestgreeting';
+import UserGreeting from '../UserGreeting/UserGreeting';
+import GuestGreeting from '../GuestGreeting/GuestGreeting';
 
 
-const Itemlistcontainer = ({isLoggedIn}) => {  
+const ItemListContainer = ({isLoggedIn}) => {  
       
     if (isLoggedIn) {
-      return <Usergreeting />;
+      return <UserGreeting />;
     }
-    return <Guestgreeting />;  
+    return <GuestGreeting />;  
 }
 
-export default Itemlistcontainer
+export default ItemListContainer

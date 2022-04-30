@@ -2,17 +2,18 @@ import React from 'react';
 import './Menu.css';
 import { Navbar, Container, Nav, NavDropdown, Button, FormControl, Form, InputGroup } from 'react-bootstrap';
 import { BiSearchAlt } from 'react-icons/bi';
-import Cartwidget from '../Cartwidget/Cartwidget';
-import Logincontrol from '../Logincontrol/Logincontrol';
+import CartWidget from '../CartWidget/CartWidget';
+import LoginControl from '../LoginControl/LoginControl';
 import { Link } from 'react-router-dom';
-import '../Logoutbutton/Logoutbutton.css';
+import '../LogoutButton/LogoutButton.css';
 
 
 function Menu(props) {
     return (
+        //   Utilizando as={Link} en componentes de react bootstrap obtiene el mismo comportamiento de Link
         <Navbar fixed={'top'} className={'position-sticky ps-0'} variant="dark" style={{backgroundColor: "#40434E"}} expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand  to="/" as={Link}>
                     <img
                         src="/american.png"
                         alt="logo"
@@ -24,15 +25,14 @@ function Menu(props) {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="flex-grow-1 justify-content-center">                        
+                    <Nav className="flex-grow-1 justify-content-center">  
                         <Nav.Link to="/" as={Link}>Inicio</Nav.Link>
-                        {/* <Link to={'/prueba/:id'}>Prueba</Link> */}
                         <Nav.Link to='/aboutus' as={Link}>Acerca de Nosotros</Nav.Link>
-                        <NavDropdown title="Productos" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#producto/ropa">Ropa</NavDropdown.Item>
-                            <NavDropdown.Item href="#producto/electro">Electrodomésticos</NavDropdown.Item>
-                            <NavDropdown.Item href="#producto/deco">Decoración</NavDropdown.Item>                            
-                            <NavDropdown.Item href="#producto/muebles">Muebles</NavDropdown.Item>
+                        <NavDropdown title="Categorias" id="basic-nav-dropdown">                            
+                            <NavDropdown.Item to='/category/invierno' as={Link}>Invierno</NavDropdown.Item>
+                            <NavDropdown.Item to='/category/verano' as={Link}>Verano</NavDropdown.Item>
+                            <NavDropdown.Item to='/category/otonio' as={Link}>Otoño</NavDropdown.Item>                            
+                            <NavDropdown.Item to='/category/primavera' as={Link}>Primavera</NavDropdown.Item>
                         </NavDropdown>
                         <Form className="d-flex ms-5 mb-2">
                             <InputGroup>
@@ -47,8 +47,8 @@ function Menu(props) {
                             </InputGroup>
                         </Form>
                     </Nav>        
-                    <Logincontrol {...props} />   
-                    <Cartwidget />
+                    <LoginControl {...props} />   
+                    <CartWidget />
                 </Navbar.Collapse>
             </Container>
         </Navbar>

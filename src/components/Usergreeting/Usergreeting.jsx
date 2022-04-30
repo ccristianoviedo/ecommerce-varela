@@ -3,9 +3,8 @@ import ItemList from '../ItemList/ItemList';
 import { ropa } from '../../ropa';
 import { Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-import Spinner from 'react-bootstrap/Spinner'
 
-const Usergreeting = () => {
+const UserGreeting = () => {
 
   const [prendas, setPrendas] = useState([]);
 
@@ -49,16 +48,14 @@ const Usergreeting = () => {
   }, [])
 
   return (
-    <div className='App-header'>
-      {/* <Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </Spinner> */}
+    <div className='App-header'>      
       <Routes>
         <Route path='/' element={<ItemList ropa={prendas} />} />
         <Route path='item/:id' element={<ItemDetailContainer ropa={prendas} />} />
+        <Route path='category/:id' element={<ItemList ropa={prendas} />} />
       </Routes>
     </div>
   )
 }
 
-export default Usergreeting
+export default UserGreeting

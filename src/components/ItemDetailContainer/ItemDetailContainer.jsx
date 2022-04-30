@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 
@@ -17,7 +17,7 @@ const ItemDetailContainer = ({ ropa }) => {
          // cambiar por item detail
         <div>       
             <ItemDetail item={ropaElegida} />            
-            <Link to={`/item/${Number(id)+1}`}>Siguiente</Link>
+            {/* <Link to={`/item/${Number(id)+1}`}>Siguiente</Link> */}
         </div>
     )
 }
