@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">    
-    <img src="public/american.svg" alt="AmericanVintage" height="72">    
+    <img src="public/american.svg" alt="AmericanVintage" height="200">    
   </p>
   <p align="center">
     Feria Americana Online
@@ -13,7 +13,7 @@ E-commerce desarrollado en React, que simboliza una feria americana online, para
 
 ## Demo
 
-[![alt text](public/american.svg "Logo")]
+[![alt text](public/americanVintage.gif "Logo")]
 ---
 
 ## Funcionalidad del proyecto
