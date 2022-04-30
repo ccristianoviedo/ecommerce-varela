@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<p align="center">
+  <p align="center">    
+    <img src="public/american.svg" alt="AmericanVintage" height="72">    
+  </p>
+  <p align="center">
+    Feria Americana Online
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# E-commerce Varela
 
-## Available Scripts
+E-commerce desarrollado en React, que simboliza una feria americana online, para comercializar ropa usada.
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+[![alt text](public/american.svg "Logo")]
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidad del proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Esta web muestra los productos a la venta. Los usuarios pueden agregar o remover productos de su carrito, donde se especifica la cantidad de cada item, para luego comprarlos.
 
-### `npm test`
+----------
+## Imágenes de la web
+----------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*Index*
+>![picture alt](public/inicio.JPG "Inicio")
+----------
 
-### `npm run build`
+*Detalle de Producto*
+>![picture alt](public/detalle.JPG "Detalle de Producto")
+----------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<i class="icon-cog"></i>**##Dependencias del proyecto:**
+>  
+> - **Mui:** https://mui.com/
+> - **React Bootstrap:** https://react-bootstrap.github.io/  <i class="icon-upload"></i>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**<i class="icon-cog"> Navegabilidad / Componentes**
+> - [X] Responsive / estilos aplicados de forma estética.
+> - [X] Manejo de imágenes.
+> - [X] camelCase para eventos.
+> - [X] PascalCase para componentes.
+> - [X] Routes y Links para navegaciones.
+> - [X] Navbar con carrito implementado.
+> - [X] Promises y Hooks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+----------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div align="center">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<i>Other places you can find us:</i><br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<a href="https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23E4405F.svg?&style=flat-square&logo=youtube&logoColor=white" alt="YouTube"></a>
+<a href="https://www.twitter.com/justdjangocode" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231877F2.svg?&style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>
