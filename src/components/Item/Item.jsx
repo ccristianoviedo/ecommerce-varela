@@ -11,7 +11,7 @@ const Item = ({ item }) => {
 
     return (
         <Col>
-            <Card border="dark">
+            <Card>
                 <Link to={`/item/${item.id}`} style={{ textDecoration: 'none' }}>
                     <Card.Img variant="top" src={item.imagen} height={350} style={{ objectFit: "contain" }} />
                 </Link>

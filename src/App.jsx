@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Menu from './components/Menu/Menu';
-import Itemlistcontainer from './components/Itemlistcontainer/Itemlistcontainer';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
