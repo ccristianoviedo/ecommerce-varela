@@ -3,6 +3,7 @@ import { Col, Card, Container, Row } from 'react-bootstrap';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import './ItemDetail.css';
+import Rating from '@mui/material/Rating';
 
 const ItemDetail = ({ item }) => {
 
@@ -21,12 +22,9 @@ const ItemDetail = ({ item }) => {
                     </Col>
                     <Col>
                         <Card.Title>{item.titulo}</Card.Title>
-                        
+                        <Rating name="size-small" defaultValue={2} size="small" />
                         <hr></hr>
-                        <Card.Text className='textoStyle'>
-                            This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.
-                        </Card.Text>
+                        <Card.Text className='textoStyle'>{item.cartTexto}</Card.Text>
                         <Card.Text className='textoStyle'>Precio:  <span className='precioStyle'>$ {item.precio}</span></Card.Text>
                         <hr></hr>
                         <button className="btn btn-masmenos col-1" onClick={() => setTalle(1)}>XS</button>
