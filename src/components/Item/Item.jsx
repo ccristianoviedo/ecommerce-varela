@@ -18,8 +18,7 @@ const Item = ({ item }) => {
                 <Card.Body>
                     <Card.Title>{item.titulo}</Card.Title>
                     <Card.Text>
-                        This is a longer card with supporting text below as a natural
-                        lead-in to additional content. This content is a little bit longer.
+                        {item.cartTexto}
                     </Card.Text>
                     <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                 </Card.Body>

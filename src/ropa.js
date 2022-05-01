@@ -24,7 +24,7 @@ export const ropa = [
             "cartTexto": "Buzo de cuello redondo para hombre, 100% algodón, Cuenta con tela elástica en el cuello, dobladillo y puños para mantenerte abrigado.",
             "stock": 5,
             "precio": 3000,
-            "category": "invierno"
+            "category": "verano"
         },
         {
             "id": 4,
@@ -48,7 +48,7 @@ export const ropa = [
             "id": 6,
             "titulo": "Vestido azul",
             "imagen": "https://static.vecteezy.com/system/resources/previews/002/255/186/large_2x/clothes-on-white-background-free-photo.jpg",
-            "cartTexto": "Vestido largo modelo Britt para mujer, material cómodo, suelto y vaporoso. Hecho de 100 % viscosa, tacto suave como de algodón, suave contra la piel aunque lo lleves todo el día, ideal cuando hace calor",
+            "cartTexto": "Vestido largo modelo Britt para mujer, material cómodo, suelto y vaporoso. Hecho de 100 % viscosa, tacto suave como de algodón",
             "stock": 5,
             "precio": 3300,
             "category": "verano"
