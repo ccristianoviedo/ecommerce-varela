@@ -34,7 +34,7 @@ Esta web muestra los productos a la venta. Los usuarios pueden agregar o remover
 
 ---
 
-<i class="icon-cog"></i>**##Dependencias del proyecto:**
+<i class="icon-cog"></i>**Dependencias del proyecto:**
 >  
 > - **Mui:** https://mui.com/
 > - **React Bootstrap:** https://react-bootstrap.github.io/  <i class="icon-upload"></i>
